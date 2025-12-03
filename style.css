@@ -1,0 +1,371 @@
+ot {
+    --cor-principal: #333333; /* Preto Suave (títulos/texto) */
+    --cor-secundaria: #1a1a1a; /* Preto Mais Escuro (para cabeçalho) */
+    --cor-acento: #A0522D; /* Castanho/Bege Escuro (botões/destaques) */
+    --cor-fundo: #F5F5DC; /* Bege Claro - Cor de fundo da página */
+    --cor-fundo-claro: #FFFFFF; /* Branco Puro para as caixas de conteúdo */
+    --cor-texto: #555555; 
+    --cor-borda: #E0E0E0; 
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Fonte Sans-serif para corpo */
+    margin: 0; 
+    padding: 0;
+    background-color: var(--cor-fundo); 
+    color: var(--cor-texto); 
+    line-height: 1.7; 
+}
+body {
+    font-family: 'Poppins', sans-serif; 
+    margin: 0; 
+    padding: 0;
+    background-color: var(--cor-fundo); 
+    color: var(--cor-texto); 
+    line-height: 1.8; /* Aumenta a distância entre linhas para elegância */
+    font-size: 0.95em; /* Diminui ligeiramente o tamanho base do texto */
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif; 
+    color: var(--cor-principal);
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Aumenta o espaçamento entre letras nos títulos */
+    font-weight: 400; /* Torna os títulos menos agressivos (mais finos) */
+}
+
+h2 {
+    font-size: 1.8em; /* Títulos de seção mais elegantes */
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* Fonte Serif para títulos */
+    color: var(--cor-principal);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* 2. CABEÇALHO (HEADER) */
+.cabecalho {
+    background-color: var(--cor-fundo-claro); /* Fundo branco/claro */
+    border-bottom: 1px solid var(--cor-borda);
+    color: var(--cor-principal);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.menu-navegacao {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.menu-navegacao li a {
+    color: var(--cor-principal);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 0.95em;
+    transition: color 0.3s;
+}
+
+.menu-navegacao li a:hover {
+    color: var(--cor-acento);
+}
+
+/* 3. BOTÃO CTA NO MENU */
+.botao-cta-menu {
+    background-color: var(--cor-acento); 
+    color: white !important; 
+    padding: 8px 15px;
+    border-radius: 3px;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    font-size: 0.8em !important;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s;
+}
+
+.botao-cta-menu:hover {
+    background-color: #8B4513; /* Um pouco mais escuro */
+}
+
+/* 4. HERO SECTION (BANNER DE DOIS LADOS) */
+.hero-full-page {
+    display: flex;
+    height: 90vh; /* Ocupa quase a altura total da tela */
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+.hero-imagem {
+    flex: 2; /* Ocupa 2/3 da largura */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Estilo para o texto flutuante (CUIDA DO TEU CABELO...) */
+.hero-texto-flutuante {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px 25px;
+    max-width: 80%;
+}
+
+.hero-texto-flutuante h2 {
+    font-size: 1.5em;
+    margin: 0 0 5px 0;
+    color: white;
+}
+
+.hero-texto-flutuante p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    margin: 0;
+    font-weight: 300;
+    color: #eee;
+}
+
+.hero-contactos {
+    flex: 1; /* Ocupa 1/3 da largura */
+    background-color: var(--cor-fundo-claro); /* Fundo do cartão (Branco) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.cartao-contactos {
+    border: 1px solid var(--cor-principal); /* Borda fina preta */
+    padding: 40px;
+    text-align: center;
+    max-width: 300px;
+}
+
+.cartao-contactos h3 {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.titulo-contacto {
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    color: var(--cor-principal);
+}
+
+.social-icons a {
+    color: var(--cor-principal);
+    font-size: 1.2em;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--cor-acento);
+}
+
+.esperamos {
+    margin-top: 40px;
+    font-size: 0.8em;
+    font-style: italic;
+    color: var(--cor-texto);
+}
+
+/* 5. CONTEÚDO PRINCIPAL E SEÇÕES */
+.conteudo-principal {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.secao {
+    margin-bottom: 80px;
+    padding: 30px 0;
+}
+
+.secao h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--cor-borda);
+    padding-bottom: 10px;
+}
+
+/* 6. SECÇÃO PRODUTOS */
+.produtos-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.produto-item {
+    border: 1px solid var(--cor-acento); /* Borda de acento */
+    padding: 20px;
+    width: 180px;
+    transition: box-shadow 0.3s;
+}
+
+.produto-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.produto-nome {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    margin: 0 0 10px 0;
+    color: var(--cor-principal);
+}
+
+.produto-preco {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: var(--cor-acento);
+}
+
+.botao-cta-principal {
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+    background-color: var(--cor-acento); 
+    color: white; 
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 20px;
+    font-weight: 600;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+/* 7. SECÇÃO FEEDBACK */
+.feedback-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.testemunho-card {
+    background-color: var(--cor-fundo-claro);
+    border: 1px solid var(--cor-borda);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.citacao {
+    font-style: italic;
+    margin-bottom: 15px;
+    color: var(--cor-texto);
+}
+
+.autor {
+    font-weight: 600;
+    text-align: right;
+    color: var(--cor-principal);
+    font-size: 0.9em;
+}
+
+/* 8. SECÇÃO PORQUE ALOÉ.V */
+.beneficios-lista {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.beneficios-lista li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    color: var(--cor-texto);
+}
+
+.beneficios-lista .fa-check-circle {
+    color: var(--cor-acento);
+    margin-right: 10px;
+}
+
+/* 9. RODAPÉ */
+.rodape {
+    background-color: var(--cor-secundaria); 
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
+/* AJUSTE 2: Menu e Logo Mais Refinados */
+.cabecalho {
+    /* Manter o display: flex; justify-content: space-between; etc. */
+    border-bottom: none; /* Remove a borda inferior */
+}
+
+.logo {
+    margin: 0;
+    font-size: 2.2em; /* Torna o logo maior */
+    font-weight: 700;
+}
+
+.menu-navegacao {
+    /* Manter o list-style: none; display: flex; etc. */
+    gap: 35px; /* Aumenta o espaço entre os itens do menu */
+}
+
+.menu-navegacao li a {
+    /* Manter as cores e transições */
+    font-weight: 300; /* Links mais leves */
+    font-size: 0.9em; /* Links ligeiramente menores */
+    letter-spacing: 1px; /* Espaçamento subtil nos links */
+}
+
+.botao-cta-menu {
+    /* Manter o estilo de botão, mas com ajustes de cor e fonte */
+    background-color: var(--cor-acento); 
+    color: var(--cor-fundo-claro) !important; /* Cor do texto do botão branca */
+    padding: 6px 15px; /* Botão ligeiramente mais fino */
+    font-size: 0.8em !important;
+}
+
+.quem-somos .texto-box {
+    background-color: var(--cor-fundo-claro); /* Branco puro */
+    border: 1px solid var(--cor-borda);
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto; /* Centraliza a caixa */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03); /* Sombra muito suave */
+    border-radius: 5px; /* Bordas suaves */
+}
+
+
+       
+*/{
+    background-color: var(--cor-fundo-claro);
+    border: 1px solid var(--cor-borda);
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto; 
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03); 
+    border-radius: 5px; 
+}
