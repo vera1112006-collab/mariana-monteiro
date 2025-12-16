@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aloe.V | Cuidado de Cabelo</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
@@ -129,6 +129,89 @@
         <p>Contactos: 035591905 | Email: ALOEVCABELOS@GMAIL.COM</p> 
         <p>&copy; 2025 Aloé.V. Todos os direitos reservados.</p>
     </footer>
+
+</body>
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Meu Site</h1>
+</header>
+
+<main>
+    <section class="conteudo">
+        <p>Conteúdo do site aqui</p>
+    </section>
+</main>
+
+</body>
+<img src="imagem.jpg" alt="Imagem responsiva">
+<button onclick="menu()">☰ Menu</button>
+
+<nav id="menu" style="display:none;">
+    <a href="#">Home</a>
+    <a href="#">Sobre</a>
+    <a href="#">Contato</a>
+</nav>
+
+<script>
+function menu() {
+    const m = document.getElementById("menu");
+    m.style.display = m.style.display === "block" ? "none" : "block";
+}
+</script>
+</html>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site Responsivo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Meu Primeiro Site</h1>
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contacto</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Design Responsivo</h2>
+    <p>Este site adapta-se automaticamente a telemóveis, tablets e computadores.</p>
+</section>
+
+<section class="cards">
+    <div class="card">
+        <h3>Mobile</h3>
+        <p>Perfeito para smartphones.</p>
+    </div>
+    <div class="card">
+        <h3>Tablet</h3>
+        <p>Layout ajustado a ecrãs médios.</p>
+    </div>
+    <div class="card">
+        <h3>Desktop</h3>
+        <p>Visual limpo em ecrãs grandes.</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 • Criado por ti 💻</p>
+</footer>
 
 </body>
 </html>
