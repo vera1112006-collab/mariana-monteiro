@@ -1,74 +1,21 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+/* Estilo geral (Computador) */
+.container {
+  width: 400px;
+  display: flex;
 }
 
-body {
-    background: #f4f4f4;
-    color: #333;
+/* Estilo para Telemóveis */
+@media (max-width: 300px) {
+  .container {
+    width: 50%;       /* Ocupa a largura total do ecrã */
+    flex-direction: column; /* Se usar flexbox, os itens ficam um por cima do outro */
+  }
+  
+  body {
+    font-size: 18px;    /* Aumentar o texto para facilitar a leitura */
+  }
 }
-
-/* Header */
-header {
-    background: #111;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-nav {
-    margin-top: 10px;
-}
-
-nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Hero */
-.hero {
-    padding: 40px;
-    text-align: center;
-    background: white;
-}
-
-/* Cards */
-.cards {
-    display: flex;
-    gap: 20px;
-    padding: 40px;
-    justify-content: center;
-}
-
-.card {
-    background: white;
-    padding: 20px;
-    width: 250px;
-    border-radius: 8px;
-    text-align: center;
-}
-
-/* Footer */
-footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
-
-/* 📱 RESPONSIVO */
-@media (max-width: 768px) {
-    .cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
+img {
+  max-width: 50%;
+  height: auto;
 }
